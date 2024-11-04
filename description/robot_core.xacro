@@ -61,6 +61,10 @@
         <origin xyz="0 0 0.1" rpy="0 0 0" />
     </joint>
 
+    <gazebo reference="chassi">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
 
     <!--! FRONT LEFT WHEELS !-->
     <!--? LINK ?-->
@@ -89,7 +93,9 @@
         <axis xyz="0 0 1" />
     </joint>
 
-
+    <gazebo reference="front_left_wheel">
+        <material>Gazebo\White</material>
+    </gazebo>
 
     <!--! FRONT RIGHT WHEELS !-->
     <!--? LINK ?-->
@@ -118,7 +124,9 @@
         <axis xyz="0 0 1" />
     </joint>
 
-
+    <gazebo reference="front_right_wheel">
+        <material>Gazebo\White</material>
+    </gazebo>
 
     <!--! REAR LEFT WHEELS !-->
     <!--? LINK ?-->
@@ -147,7 +155,9 @@
         <axis xyz="0 0 1" />
     </joint>
 
-
+    <gazebo reference="rear_left_wheel">
+        <material>Gazebo\White</material>
+    </gazebo>
 
     <!--! REAR RIGHT WHEELS !-->
     <!--? LINK ?-->
@@ -175,5 +185,9 @@
         <origin xyz="-0.237 -0.150 -0.055" rpy="-${pi/2} 0 0" />
         <axis xyz="0 0 1" />
     </joint>
+
+    <gazebo reference="rear_right_wheel">
+        <material>Gazebo/White</material>
+    </gazebo>
 
 </robot>
